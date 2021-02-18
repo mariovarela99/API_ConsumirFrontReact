@@ -13,10 +13,24 @@ class App extends Component {
   }
 
   render() {
-    const { filmes } = this.state;
+    const { users } = this.state;
     return (
       <>
-        <h1>API Consumir Front React</h1> {console.log(filmes)}
+        <h1>API Consumir Front React</h1>
+        <section>
+          {users.map((user) => {
+            return (
+              <li>
+                <span>{user.id}</span>
+                <div>
+                  <h1> {user.name} </h1>
+                  <p>{user.username}</p>
+                </div>
+                <strong>{user.email}</strong>
+              </li>
+            );
+          })}
+        </section>
       </>
     );
   }
