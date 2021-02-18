@@ -12,7 +12,8 @@
     "styled-components": "^5.2.0",
     "react-switch": "^5.0.1",
     "typescript": "~3.7.2",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "axios": "^0.20.0"
   },
   "scripts": {
     "start": "react-scripts start",
